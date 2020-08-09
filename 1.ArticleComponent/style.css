@@ -122,6 +122,7 @@
   object-fit: cover;
   cursor: pointer;
   scale: 1.5;
+  margin: 1rem 0;
 }
 
 .shareBtn:hover {
@@ -133,8 +134,8 @@
   display: none;
 
   position: absolute;
-  top: -9vh;
-  right: -6vw;
+  top: -6.5vh;
+  right: -5.2vw;
   background-color: hsl(217, 19%, 35%);
   width: auto;
   flex-direction: row;
@@ -144,23 +145,15 @@
   font-weight: 700;
   align-items: center;
   padding: 1rem 2rem;
-  border-radius: 1rem;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 60% 85%, 50% 100%, 40% 85%, 0 85%);
+  padding: 1rem 3rem;
+  border-radius: 1.5rem;
 }
 
-.socialShare::after {
-  position: absolute;
-  content: '';
-  width: 3vw;
-  height: 3vh;
-  background-color: hsl(217, 19%, 35%);
-  /* background-color: #f1f1; */
-  top: 4.5vh;
-  right: 6vw;
-  clip-path: polygon(50% 100%, 0 0, 100% 0);
-}
+
 
 .socialShare img {
-  margin: 0 1rem;
+  margin: 1.5rem 1rem;
 }
 
 @media screen and (max-width:992px) {
@@ -192,11 +185,13 @@
   }
 
   .shareBtn {
-    scale: 1.5;
+    scale: 1;
+    flex: 1;
   }
 
   .socialShare::after {
     width: 8vw;
     height: 3vh;
   }
+
 }
