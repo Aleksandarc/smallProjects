@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  background-image: url('../img/bg-intro-desktop.png');
+  background-color: hsl(0, 100%, 74%);
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 1rem;
+}
+
+.left h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.left p {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.rightTop p {
+  padding: 1rem 10%;
+  border-radius: .5rem;
+  background-color: hsl(248, 32%, 49%);
+  margin-bottom: 2rem;
+  color: #fff;
+  font-weight: 400;
+  box-shadow: 0 .4rem 0 rgba(0, 0, 0, .2);
+  text-align: center;
+}
+
+.rightBottom {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: .5rem;
+  box-shadow: 0 .4rem .2rem rgba(0, 0, 0, .3);
+}
+
+.rightBottom form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.rightBottom form input {
+  border-radius: .5rem;
+  margin: .5rem 0;
+  padding: .5rem;
+  border: 1px solid hsl(246, 25%, 77%);
+  font-weight: 600;
+}
+
+.rightBottom form input:focus {
+  border: 2px solid hsl(249, 10%, 26%);
+}
+
+.formSubmit {
+  background-color: hsl(154, 59%, 51%);
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.rightBottom p {
+  font-size: .8rem;
+  text-align: center;
+  color: hsl(246, 25%, 77%);
+  margin-bottom: 1.5rem;
+}
+
+.rightBottom p strong {
+  color: hsl(0, 100%, 74%);
+  font-weight: 500;
+  font-size: .8rem;
+}
+
+@media screen and (max-width:375px) {
+  .container {
+    flex-direction: column;
+    padding: 2rem;
+    height: auto;
+  }
+
+  .left {
+    margin-bottom: 5rem;
+    margin-right: 0;
+  }
+
+  .left h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .left p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  .right {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .rightTop p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .rightTop p strong {
+    font-size: 1.2rem;
+  }
+
+  .rightBottom {
+    padding: 1rem;
+  }
+}

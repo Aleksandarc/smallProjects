@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.topContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(204, 43%, 93%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10% 25%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  height: auto;
+  width: 100%;
+  box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, .5);
+}
+
+.top {
+  padding: 10%;
+  background-color: #fff;
+  width: 100%;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+
+.top h2 {
+  margin-bottom: 2rem;
+  color: hsl(179, 62%, 43%);
+  font-size: 2rem;
+}
+
+.top h3 {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.top p {
+  font-size: 1rem;
+  color: hsl(218, 22%, 67%);
+  width: 100%;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+}
+
+.bottom h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.bottomLeft {
+  background-color: hsl(179, 62%, 43%);
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 10%;
+  color: hsl(204, 43%, 93%);
+}
+
+.bottomLeft h2 {
+  font-size: 1.5rem;
+  color: #e3e3e3;
+}
+
+.bottomLeft h2 strong {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.bottomLeft p {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.bottomLeft button {
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  border-radius: .5rem;
+  box-shadow: 0 .3rem .3rem .3rem rgba(0, 0, 0, .2);
+  color: hsl(204, 43%, 93%);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.bottomRight {
+  background-color: hsl(179, 62%, 48%);
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  gap: 1rem;
+  padding: 10%;
+  color: hsl(204, 43%, 93%);
+}
+
+.bottomRight p {
+  font-size: .95rem;
+  width: 75%;
+  color: #e7e7e7;
+}
+
+@media screen and (max-width:375px) {
+  .topContainer {
+    padding: 2rem;
+  }
+
+  .container {
+    height: auto;
+  }
+
+  .top h2 {
+    font-size: 1.5rem;
+  }
+
+  .top h3 {
+    font-size: 1rem;
+  }
+
+  .bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .bottomLeft {
+    gap: 1.5rem;
+  }
+
+  .bottom h3 {
+    font-size: 1rem;
+  }
+
+  .bottom h2 {
+    font-size: 1rem;
+  }
+
+  .bottom h2 strong {
+    font-size: 1.5rem;
+  }
+
+  .bottomLeft p {
+    font-size: .9rem;
+  }
+
+  .bottomLeft button {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .bottomRight p {
+    font-size: .85rem;
+  }
+}
