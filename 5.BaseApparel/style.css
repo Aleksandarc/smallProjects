@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  background: url("./img/bg-pattern-desktop.svg"), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  width: 100%;
+  height: 100vh;
+  place-items: center;
+  overflow: hidden;
+}
+
+
+
+.left {
+  flex: 1;
+  padding: 15%;
+  display: flex;
+  flex-direction: column;
+  flex: 1.5;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  z-index: 1;
+  left: 15%;
+  top: 5%;
+}
+
+.left h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+
+}
+
+.left h2 strong {
+  font-size: 4.5rem;
+  font-weight: 400;
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+}
+
+.left p {
+  color: hsl(0, 36%, 70%);
+  margin: 2rem 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.left form {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.left form input {
+  border: 1px solid hsl(0, 36%, 70%);
+  border-radius: 2rem;
+  padding: 1.2rem 1.5rem;
+  background-color: transparent;
+  width: 100%;
+  font-weight: 300;
+}
+
+.left form input:focus,
+.left form button:focus {
+  outline: none;
+}
+
+
+.left form button {
+  position: absolute;
+  border-radius: 2rem;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border: none;
+  padding: 1.2rem 3.5rem;
+  right: 0rem;
+  top: 0;
+  cursor: pointer;
+  box-shadow: .2rem .4rem .4rem .1rem rgba(0, 0, 0, .2);
+  z-index: 1;
+}
+
+.left form button::after {
+  content: '';
+  box-shadow: .2rem .4rem .4rem .1rem rgba(0, 0, 0, .2);
+  z-index: -1;
+}
+
+.right {
+  order: 2;
+  height: 100%;
+  width: 100%;
+  background: url(./img/hero-desktop.jpg) no-repeat;
+  background-size: cover;
+  flex: 2;
+}
+
+.right img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+@media screen and (max-width:965px) {
+
+  .container {
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    justify-content: space-between;
+  }
+
+  .logo {
+    display: block;
+    margin: 2rem 5%;
+    position: relative;
+  }
+
+  .left {
+    padding: 5%;
+    order: 2;
+  }
+
+  .left h2 strong {
+    font-size: 3rem;
+    font-weight: 300;
+  }
+
+  .left h2 {
+    text-align: center;
+    letter-spacing: 0rem;
+    font-size: 2.5rem;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .right {
+    order: 1;
+    background: url(./img/hero-mobile.jpg) no-repeat;
+    background-size: cover;
+  }
+}
