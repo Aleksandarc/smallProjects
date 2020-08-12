@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+}
+
+.itemsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  background: url(./img/bg-desktop.png) no-repeat hsl(229, 57%, 11%);
+  min-height: 100vh;
+}
+
+.left {
+  background-color: hsl(228, 56%, 26%);
+  padding: 2rem;
+  width: 25%;
+  border-radius: 1rem;
+  border-top-right-radius: 6rem;
+  margin-right: 1rem;
+}
+
+.left img {
+  margin-bottom: 1rem;
+}
+
+.leftIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.leftIcons img {
+  object-fit: scale-down;
+  margin: 1rem .5rem;
+  padding: .5rem;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: .5rem;
+  place-items: center;
+}
+
+.right {
+  background-color: hsl(228, 56%, 26%);
+  place-items: flex-end;
+  width: 50%;
+  height: 50%;
+  color: #fff;
+  padding: 2rem;
+  justify-content: flex-end;
+}
+
+.right h2 {
+  color: hsl(243, 100%, 93%);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.right h2 strong {
+  font-weight: 700;
+  color: #fff;
+}
+
+.spaceUsed {
+  width: 100%;
+  height: 3vh;
+  background-color: hsl(229, 57%, 11%);
+  margin-bottom: 1rem;
+  position: relative;
+  border-radius: 2rem;
+}
+
+.spaceUsed::after {
+  position: absolute;
+  content: '';
+  height: 2vh;
+  width: 81.5%;
+  background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  transform: translate(.2vw, .5vh);
+  border-radius: 2rem;
+}
+
+.spaceUsed::before {
+  content: '';
+  position: absolute;
+  width: 2vh;
+  height: 2vh;
+  border-radius: 50%;
+  background: #fff;
+  left: 80%;
+  transform: translate(-.4rem, .3rem);
+  z-index: 1;
+}
+
+.space {
+  display: flex;
+  justify-content: space-between;
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width:375px) {
+  .itemsContainer {
+    background: url(./img/bg-mobile.png) no-repeat hsl(229, 57%, 11%);
+
+  }
+}
