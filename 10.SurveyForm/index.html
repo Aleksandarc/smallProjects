@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Aleksandar Černjev" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>SpaceY Job Form</h1>
+    <div class="container">
+      <form action="">
+        <div class="inputBox">
+          <label for="name" class="textLabel">Name</label>
+          <input type="text" class="textInput" name="name" required />
+        </div>
+        <div class="inputBox">
+          <label for="email" class="textLabel">Email</label>
+          <input type="email" class="textInput" name="email" required />
+        </div>
+        <div class="inputBox">
+          <label for="age" class="textLabel"
+            >Age<small>(Optional)</small></label
+          >
+          <input type="number" class="textInput" name="age" min="18" max="99" />
+        </div>
+        <div class="inputBox">
+          <p class="textQuestion">Are you interested in internship?</p>
+          <section class="radioInput">
+            <label>
+              <input
+                type="radio"
+                name="internship"
+                value="yes"
+                class="radioSelection"
+              />Yes
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="internship"
+                value="no"
+                class="radioSelection"
+              />No
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="internship"
+                value="maybe"
+                class="radioSelection"
+              />Maybe
+            </label>
+          </section>
+        </div>
+        <div class="inputBox">
+          <p class="textQuestion">
+            For what positions would you like to apply?
+          </p>
+          <label class="checkBoxItem">
+            <input
+              type="checkbox"
+              class="inputCheckbox"
+              value="front-end-developer"
+            />
+            Front-end Developer
+          </label>
+          <label class="checkBoxItem">
+            <input
+              type="checkbox"
+              class="inputCheckbox"
+              value="back-end-developer"
+            />
+            Back-end Developer
+          </label>
+          <label class="checkBoxItem">
+            <input
+              type="checkbox"
+              class="inputCheckbox"
+              value="full-stack-developer"
+            />
+            Full-stack Developer
+          </label>
+          <label class="checkBoxItem">
+            <input
+              type="checkbox"
+              class="inputCheckbox"
+              value="project-manager"
+            />
+            Project Manager
+          </label>
+          <label class="checkBoxItem">
+            <input type="checkbox" class="inputCheckbox" value="ux-designer" />
+            UX Designer
+          </label>
+
+          <div class="inputBox">
+            <p class="textQuestion">Any comments or suggestions?</p>
+            <textarea
+              name="comment"
+              id="comments"
+              placeholder="Enter your comment here..."
+              class="inputArea"
+            ></textarea>
+          </div>
+        </div>
+        <button type="submit" class="submitForm">Submit</button>
+      </form>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
