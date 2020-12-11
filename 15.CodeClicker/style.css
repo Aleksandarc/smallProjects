@@ -1,0 +1,188 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+.left-tab {
+  background-color: #F2F2F2;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: baseline;
+  border-right: 2px solid #eee;
+  padding: 15% 0;
+}
+
+.left-tab h1 {
+  font-size: 2rem;
+  width: 95%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.app-counter {
+  width: 100%;
+  text-align: center;
+  padding: .5rem 0;
+  margin-bottom: 15%;
+}
+
+.apps {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: -.5rem;
+}
+
+.cps {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.code-target {
+  width: 100%;
+  padding: 15%;
+  overflow: hidden;
+}
+
+.clickTarget {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.code-target img:hover {
+  transform: scale(1.10);
+}
+
+.middle-tab {
+  /* background-color: #000000; */
+  background: url('./img/pattern.jpg');
+  border-right: 2px solid #eee;
+  padding: 15% 0;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.middle-group {
+  width: 95%;
+  min-height: 20vh;
+  background: #F2F2F2;
+  position: relative;
+  margin-bottom: 1vh;
+}
+
+.right-tab {
+  background-color: #F2F2F2;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: baseline;
+  padding: 15% 0;
+}
+
+.right-tab .title {
+  font-size: 3rem;
+  margin-bottom: 5%;
+  color: #000;
+}
+
+.right-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 2rem;
+  background-color: rgb(210, 210, 210, .5);
+  width: 100%;
+  color: #000;
+  padding: .5rem 5%;
+}
+
+.upgrade-cointainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 10vh;
+  width: 100%;
+  background-color: rgb(210, 210, 210, .5);
+  cursor: pointer;
+  margin: .5rem 2rem;
+}
+
+.buy-sell p {
+  color: rgb(204, 204, 204);
+  transition: .5s;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color .5s ease-in;
+  margin-right: 4rem;
+}
+
+.buy:hover,
+.sell:hover {
+  color: #fff;
+  text-shadow: 0px 1px 0px #000, 0px 0px 1px #000, 0px 0px 4px #000;
+}
+
+.control-values {
+  color: rgb(204, 204, 204);
+  transition: .5s;
+  cursor: pointer;
+  font-size: 2rem;
+  margin: 0 2rem;
+}
+
+.control-values:hover {
+  color: #fff;
+  text-shadow: 0px 1px 0px #000, 0px 0px 1px #fff, 0px 0px 4px #fff;
+}
+
+.upgrade-cointainer {
+  transition: box-shadow .1s ease-in;
+}
+
+.upgrade-cointainer:hover {
+  box-shadow: inset 0rem 0rem 3rem rgba(0, 0, 0, .2);
+}
+
+.upgrade-image-container {
+  width: 4vw;
+  height: auto;
+  margin-right: 2rem;
+  padding: .5rem;
+}
+
+.upgrade-image {
+  filter: drop-shadow(-5px 0 0 rgba(0, 0, 0, .5));
+}
+
+.upgrade-title {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: -.8rem;
+  color: #000;
+}
+
+.upgrade-cost {
+  font-size: 1.5rem;
+  font-weight: 400;
+}

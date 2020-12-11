@@ -1,0 +1,1 @@
+const target = document.querySelector('.code-target');
