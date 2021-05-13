@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.currentColor {
+  text-shadow: .05vmax .05vmax .05vmax black;
+  color: #fff;
+  font-size: 3vmax;
+}
+
+.changeColor {
+  margin-top: 1vmax;
+  border: none;
+  padding: 1vmax;
+  font-size: 3vmax;
+  border-radius: 1vmax;
+  cursor: pointer;
+}
